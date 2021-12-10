@@ -56,7 +56,7 @@ export const EditUser = () => {
               <FormInput onChange={(e) => onValueChange(e)} name='email' value={email} type="text" placeholder="Insira email" autoFocus="autofocus" required></FormInput>
             </FormFieldset>
             <FormFieldset>
-              <FormLabel for="phoneOne">Contato Primário</FormLabel>
+              <FormLabel for="phoneOne">Contato Primário *</FormLabel>
               <FormInput onChange={(e) => onValueChange(e)} name='phoneOne' value={phoneOne} type="text" placeholder="Telefone para Contato" autoFocus="autofocus" required></FormInput>
             </FormFieldset>
             <FormFieldset>
@@ -68,7 +68,7 @@ export const EditUser = () => {
               <FormInput onChange={(e) => onValueChange(e)} name='phoneThree' value={phoneThree} type="text" placeholder="Telefone para Contato" autoFocus="autofocus"></FormInput>
             </FormFieldset>
             <FormFieldset>
-              <FormLabel for="addressOne">Endereço Primário</FormLabel>
+              <FormLabel for="addressOne">Endereço Primário *</FormLabel>
               <FormInput onChange={(e) => onValueChange(e)} name='addressOne' value={addressOne} type="text" placeholder="Informar Endereço" autoFocus="autofocus"></FormInput>
             </FormFieldset>
             <FormFieldset>
