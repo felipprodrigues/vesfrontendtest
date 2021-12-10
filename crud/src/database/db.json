@@ -1,0 +1,15 @@
+{
+  "users": [
+    {
+      "nome": "Admin",
+      "email": "admin@gmail.com",
+      "phoneOne": "123456789",
+      "phoneTwo": "",
+      "phoneThree": "",
+      "addressOne": "alameda dos anjos",
+      "addressTwo": "",
+      "addressThree": "",
+      "id": 1
+    }
+  ]
+}

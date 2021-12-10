@@ -1,0 +1,177 @@
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  min-height: 100%;
+  height: 100%;
+}
+
+body {
+  width: 100%;
+  margin: 0;
+  transition: ease-in 1s;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+}
+
+h1,
+h2,
+h3,
+h4 {
+  line-height: 1.2;
+  font-family: "Ledger", serif;
+  margin: 0;
+}
+
+h1,
+h3 {
+  margin-top: 1.2em;
+  color: white;
+}
+
+h3 {
+  line-height: 1.5;
+}
+
+p {
+  line-height: 1.8;
+  font-family: "Libre Baskerville", serif;
+  font-size: 16px;
+}
+
+.no-space-out {
+  margin: 0 !important;
+}
+
+.no-space-in {
+  padding: 0 !important;
+}
+
+input[type="text"] {
+  padding: 7px 13px;
+  border-radius: 4px;
+  border: 1px solid #DDD;
+}
+
+input[disabled] {
+  background: #F7F8FA;
+  border: none;
+
+}
+
+.has-full-width {
+  min-width: 100%;
+}
+
+.has-full-height {
+  height: 100vh;
+}
+
+.has-background-color {
+  background:#2B2B2B;
+}
+
+.has-text-left {
+  text-align: left;
+  width: 100%;
+}
+
+.has-margin-bottom {
+  margin-bottom: 1.2em;
+}
+
+.is-relative {
+  position: relative;
+  left: 50%;
+  right: 50%;
+}
+
+.is-centered {
+  display: flex;
+  justify-content: center;
+}
+
+.is-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.is-evident {
+  font-size: 22px;
+  font-weight: bolder;
+  margin-right: 1em;
+}
+
+.button__edit {
+  padding: .5em .75em;
+  display: inline-block;
+  width: 92%;
+  border: none;
+  text-align: center;
+  border-radius: 3px;
+  background: #FE761C;
+  color: white;
+  text-decoration: none;
+}
+
+.button__edit:hover {
+  filter: brightness(0.9);
+}
+
+
+/* Material UI buttons overwrite */
+.button__unicode--editter,
+.button__unicode--back {
+  background-color: white !important;
+  min-width: unset !important;
+  width: 35px;
+  height: 35px;
+  padding: .5em !important;
+  border-radius: 50% !important;
+}
+
+.button__unicode--editter {
+  border: 1px solid green !important;
+}
+
+.button__unicode--back {
+  border: 1px solid red !important;
+}
+
+.css-sghohy-MuiButtonBase-root-MuiButton-root,
+.css-8je8zh-MuiTouchRipple-root {
+  font-weight: bolder !important;
+  color: #000 !important;
+  font-size: 1em !important;
+}
+
+
+/* -----  */
+
+.table__wrapper {
+  margin: 2.5em;
+  border: 1px solid #E0E0E0;
+  max-width: 95%;
+  width: 100%;
+}
+
+.table__head {
+  background: #2B2B2B;
+}
+
+.css-1ygcj2i-MuiTableCell-root {
+  color: white !important;
+  font-weight: bolder !important;
+}
+
+.css-zcbmsk-MuiButtonBase-root-MuiButton-root {
+  background: #EC644B !important;
+}
+
+
