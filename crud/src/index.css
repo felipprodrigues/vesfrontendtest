@@ -108,6 +108,11 @@ input[disabled] {
   margin-right: 1em;
 }
 
+.is-open {
+  opacity: 1 !important;
+  pointer-events: all !important;
+}
+
 .button__edit {
   padding: .5em .75em;
   display: inline-block;

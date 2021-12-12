@@ -39,6 +39,20 @@ export const ButtonAddSubmit = styled.button`
   margin-bottom: 1.5em;
 `
 
+export const ButtonModal = styled.button`
+  border: 3px solid tomato;
+  padding: 5px;
+  color: tomato;
+  background: transparent;
+  transition: all .2s linear;
+
+  &:hover {
+    color: white;
+    background: tomato;
+    border-color: white;
+    font-weight: bolder;
+  }
+`
 
 
 export default Button

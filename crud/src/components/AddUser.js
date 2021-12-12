@@ -37,7 +37,7 @@ export const AddUser = () => {
   return (
     <MainContainer>
       <MainWrapper>
-        <MainFieldset width="70%">
+        <MainFieldset width="100%">
           <h1>Cadastrar Novo Usuário</h1>
           <Form width="75%" onSubmit={() => this.onValueChange()}>
             <FormFieldset>
