@@ -3,13 +3,57 @@
     {
       "nome": "Admin",
       "email": "admin@gmail.com",
-      "phoneOne": "123456789",
+      "phoneOne": " 987654321",
       "phoneTwo": "",
       "phoneThree": "",
       "addressOne": "alameda dos anjos",
       "addressTwo": "",
       "addressThree": "",
       "id": 1
+    },
+    {
+      "nome": "Carla",
+      "email": "carlapimpa@gmail.com",
+      "phoneOne": "998566547",
+      "phoneTwo": "",
+      "phoneThree": "",
+      "addressOne": "Av Junqueira",
+      "addressTwo": "",
+      "addressThree": "",
+      "id": 2
+    },
+    {
+      "nome": "Roger",
+      "email": "rogerrg@gmail.com",
+      "phoneOne": "98655656",
+      "phoneTwo": "",
+      "phoneThree": "",
+      "addressOne": "Rupertino avenue",
+      "addressTwo": "",
+      "addressThree": "",
+      "id": 3
+    },
+    {
+      "nome": "Dimas",
+      "email": "dimasdi@gmail.com",
+      "phoneOne": "998876543",
+      "phoneTwo": "",
+      "phoneThree": "",
+      "addressOne": "vila cardia",
+      "addressTwo": "",
+      "addressThree": "",
+      "id": 5
+    },
+    {
+      "nome": "Dafine",
+      "email": "daff@gmail.com",
+      "phoneOne": "988779966",
+      "phoneTwo": "",
+      "phoneThree": "",
+      "addressOne": "Cruzeiro do sul",
+      "addressTwo": "",
+      "addressThree": "",
+      "id": 6
     }
   ]
 }

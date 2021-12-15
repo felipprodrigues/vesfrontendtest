@@ -4,9 +4,10 @@ export const Form = styled.form`
   border: 1px solid black;
   border-radius: 7px;
   width: ${props => props.width};
-  padding: 0 5em;
+  padding: 0 2.5em;
   background: white;
   margin: 1.2em 0 2.5em;
+  overflow: scroll;
 `
 
 export const FormEdit = styled(Form)`

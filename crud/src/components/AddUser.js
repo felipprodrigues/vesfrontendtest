@@ -3,7 +3,6 @@ import { addUser } from '../service/api';
 import { Form, FormFieldset, FormLabel, FormInput } from '../styles/Forms.style'
 import { ButtonAddSubmit } from '../styles/Buttons.style'
 import { MainContainer, MainWrapper, MainFieldset } from '../styles/Main.style'
-import SlidingPanel from 'react-sliding-side-panel';
 
 const initialValues = {
   nome: '',
@@ -22,7 +21,6 @@ export const AddUser = () => {
 
   const [user, setUser] = useState(initialValues);
   const { nome, email, phoneOne, phoneTwo, phoneThree, addressOne, addressTwo, addressThree } = user;
-  // const history = useNavigate
 
   const onValueChange = (e) => {
     setUser({ ...user, [e.target.name]: e.target.value })
@@ -37,8 +35,8 @@ export const AddUser = () => {
   return (
     <MainContainer>
       <MainWrapper>
-        <MainFieldset width="70%">
-          <h1>Cadastrar Novo Usuário</h1>
+        <MainFieldset width="100%" height="85vh">
+          <h1 id="modalTitle">Cadastrar Novo Usuário</h1>
           <Form width="75%" onSubmit={() => this.onValueChange()}>
             <FormFieldset>
               <FormLabel for="nome">Nome</FormLabel>
@@ -54,7 +52,7 @@ export const AddUser = () => {
             </FormFieldset>
             <FormFieldset>
               <FormLabel for="phoneTwo">Contato Secundário (Opcional)</FormLabel>
-              <FormInput onChange={(e) => onValueChange(e)} name='phoneTwo' value={phoneTwo} type="text" placeholder="Telefone para Contato" autoFocus="autofocus" required></FormInput>
+              <FormInput onChange={(e) => onValueChange(e)} name='phoneTwo' value={phoneTwo} type="text" placeholder="Telefone para Contato" autoFocus="autofocus" ></FormInput>
             </FormFieldset>
             <FormFieldset>
               <FormLabel for="phoneThree">Contato Terciário (Opcional)</FormLabel>
@@ -62,7 +60,7 @@ export const AddUser = () => {
             </FormFieldset>
             <FormFieldset>
               <FormLabel for="addressOne">Endereço Primário</FormLabel>
-              <FormInput onChange={(e) => onValueChange(e)} name='addressOne' value={addressOne} type="text" placeholder="Informar Endereço" autoFocus="autofocus"></FormInput>
+              <FormInput onChange={(e) => onValueChange(e)} name='addressOne' value={addressOne} type="text" placeholder="Informar Endereço" autoFocus="autofocus" required></FormInput>
             </FormFieldset>
             <FormFieldset>
               <FormLabel for="addressTwo">Endereço Secundário (Opcional)</FormLabel>
@@ -75,16 +73,6 @@ export const AddUser = () => {
             <ButtonAddSubmit onClick={(e) => addUserDetails(e)} background="#FE761C" >Confirmar</ButtonAddSubmit>
 
           </Form>
-
-          {/* REVIEW */}
-
-          {/* <ButtonAddSubmit onClick={() => setOpenPanel(true)} background="#FE761C" >Edit</ButtonAddSubmit>
-
-          <SlidingPanel type={'left'} isOpen={openPanel} size={30}>
-
-          </SlidingPanel> */}
-
-          {/* REVIEW  */}
         </MainFieldset>
       </MainWrapper>
     </MainContainer>

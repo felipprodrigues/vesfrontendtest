@@ -22,8 +22,9 @@ export const MainWrapper = styled.div`
 `
 
 export const MainFieldset = styled.div`
-  max-width: 70%;
+  max-width: 100%;
   width: ${props => props.width};
+  height: ${props => props.height};
   background: #2B2B2B;
   display: flex;
   justify-content: center;

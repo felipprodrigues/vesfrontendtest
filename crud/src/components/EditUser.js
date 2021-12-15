@@ -42,11 +42,11 @@ export const EditUser = () => {
   }
 
   return (
-    <MainContainer>
-      <h1>Edite os dados cadastrais</h1>
-      <MainWrapper>
+    <MainContainer id="editUserContainer">
+      <h1 id="editTitle">Edite os dados cadastrais</h1>
+      <MainWrapper id="editUserWrapper">
         <MainFieldset width="100%" className="has-full-width is-centered">
-          <Form width="50%" onSubmit={(e) => this.editUserDetails(e)}>
+          <Form id="editForm" width="50%" onSubmit={(e) => this.editUserDetails(e)}>
             <FormFieldset>
               <FormLabel for="nome">Nome</FormLabel>
               <FormInput onChange={(e) => onValueChange(e)} name='nome' value={nome} type="text" placeholder="Insira nome de usuário" autoFocus="autofocus" required></FormInput>
