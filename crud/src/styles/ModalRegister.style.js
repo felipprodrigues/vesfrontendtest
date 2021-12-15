@@ -9,7 +9,7 @@ export const ModalOutter = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  background: hsla(50, 100%, 50%, 0.7);
+  background: ${props => props.background};
   opacity: 0;
   pointer-events: none;
   transition: all .2s;
@@ -23,7 +23,8 @@ export const ModalInner = styled.div`
   border: 3px solid transparent;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
   line-height: 1.6em;
   background: transparent;
   padding: 2.5em 0 ;

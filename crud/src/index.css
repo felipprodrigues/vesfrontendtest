@@ -64,6 +64,51 @@ input[disabled] {
 
 }
 
+
+@media only screen and (max-width: 1024px) {
+  #container__table {
+    max-width: 75%;
+  }
+
+  #editUserContainer {
+    background-color: #2B2B2B;
+  }
+
+  #editForm {
+    width: 95%;
+  }
+
+  #innerShell,
+  #editUserWrapper {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  #innerShell {
+    background: #f7841e;
+  }
+
+  #editTitle {
+    font-size: 28px;
+  }
+
+  #modalTitle {
+    text-align: center;
+    font-size: 22px;
+  }
+
+  #previewTable {
+    margin: 0;
+    max-height: 850px;
+  }
+
+  #previewButtonReturn {
+    margin-top: 1.25em;
+    margin-left: 0;
+  }
+}
+
+
 .has-full-width {
   min-width: 100%;
 }
@@ -81,8 +126,26 @@ input[disabled] {
   width: 100%;
 }
 
+.has-scroll {
+  overflow: scroll;
+}
+
 .has-margin-bottom {
   margin-bottom: 1.2em;
+}
+
+.has-fixed-height {
+  max-height: 550px;
+  height: 100%;
+}
+
+.has-dark-text {
+  background: black !important;
+}
+
+.has-side-borders {
+  border-left: 1px solid rgb(58, 58, 58) !important;
+  border-right: 1px solid rgb(58, 58, 58) !important;
 }
 
 .is-relative {
@@ -116,7 +179,7 @@ input[disabled] {
 .button__edit {
   padding: .5em .75em;
   display: inline-block;
-  width: 92%;
+  width: 100%;
   border: none;
   text-align: center;
   border-radius: 3px;
@@ -125,28 +188,36 @@ input[disabled] {
   text-decoration: none;
 }
 
-.button__edit:hover {
+.button__return {
+  padding: .5em .75em;
+  display: inline-block;
+  border: none;
+  text-align: center;
+  border-radius: 3px;
+  background: #FE761C;
+  color: white;
+  text-decoration: none;
+  margin-left: 2.3em
+}
+
+.button__edit:hover,
+.button__return {
   filter: brightness(0.9);
 }
 
 
 /* Material UI buttons overwrite */
-.button__unicode--editter,
-.button__unicode--back {
-  background-color: white !important;
+.button__unicode {
+  background-color: transparent !important;
   min-width: unset !important;
   width: 35px;
   height: 35px;
   padding: .5em !important;
   border-radius: 50% !important;
-}
-
-.button__unicode--editter {
-  border: 1px solid green !important;
-}
-
-.button__unicode--back {
-  border: 1px solid red !important;
+  border: 1px solid lightslategray !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
 }
 
 .css-sghohy-MuiButtonBase-root-MuiButton-root,
@@ -161,7 +232,6 @@ input[disabled] {
 
 .table__wrapper {
   margin: 2.5em;
-  border: 1px solid #E0E0E0;
   max-width: 95%;
   width: 100%;
 }
@@ -179,4 +249,14 @@ input[disabled] {
   background: #EC644B !important;
 }
 
+.css-rqglhn-MuiTable-root {
+  width: 40% !important;
+}
+
+.css-1ex1afd-MuiTableCell-root {
+  text-align: center !important;
+  line-height: 5.3 !important;
+  color: white !important;
+  padding: 0 16px !important
+}
 

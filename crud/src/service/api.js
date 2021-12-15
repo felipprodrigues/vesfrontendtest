@@ -7,6 +7,11 @@ export const getUsers = async (id) => {
   return await axios.get(`${url}/${id}`);
 }
 
+export const displayUsers = async (id) => {
+  id = id || '';
+  return await axios.get(`${url}/${id}`);
+}
+
 export const addUser = async (user) => {
   return await axios.post(url, user);
 }

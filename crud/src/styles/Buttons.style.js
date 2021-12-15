@@ -12,6 +12,7 @@ export const Button = styled.a`
   color: white;
   font-weight: bold;
   text-decoration: none;
+  cursor: pointer;
 
   &:hover {
     filter: brightness(0.9);
@@ -33,24 +34,25 @@ export const ButtonAddSubmit = styled.button`
   display: inline-block;
   width: 100%;
   background-color: #f7841e;
-  color: white
+  color: white;
   font-weight: bolder;
   border: none;
   margin-bottom: 1.5em;
+  cursor: pointer;
 `
 
-export const ButtonModal = styled.button`
+export const ButtonModal = styled.a`
   border: 3px solid tomato;
   padding: 5px;
-  color: tomato;
-  background: transparent;
+  color: white;
+  background: tomato;
   transition: all .2s linear;
+  width: 70%;
+  font-weight: bolder;
+  cursor: pointer;
 
   &:hover {
-    color: white;
-    background: tomato;
-    border-color: white;
-    font-weight: bolder;
+    filter: brightness(.9);
   }
 `
 
